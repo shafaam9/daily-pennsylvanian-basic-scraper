@@ -30,7 +30,8 @@ def scrape_data_point():
 
     if req.ok:
         soup = bs4.BeautifulSoup(req.text, "html.parser")
-        target_element = soup.find("a", class_="medium-link")
+        target_element = target_element = soup.select_one("div.featured-media a.medium-link")
+
 
         if target_element:
             headline = target_element.text.strip()
