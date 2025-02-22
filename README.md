@@ -130,8 +130,8 @@ But it is important to use it responsibly and ethically. Here are some guideline
 
 7. Assess if decisions made using the data could contribute to bias, discrimination or unfair profiling.
 
-8. Validate quality of scraped data, and recognize limitations in ensuring relevance and accuracy inherent with web data.  
+8. Validate quality of scraped data, and recognize limitations in ensuring relevance and accuracy inherent with web data.
 
-9. Document your scraping process thoroughly for replicability, transparency and accountability.
+# Modification Reflection
 
-10. Continuously re-evaluate your scraping program against applicable laws and ethical principles.
+The changes I made were to the scraper function. The goal of my modification was to scrap the headlines on the multimedia page of the DP's website. I first changed the address of the request to be https://www.thedp.com/multimedia and then extracted the headline by editing the target element class to "medium-link". After these changes, I also altered the logic of the if statement to focus on whether the target_element was not None and then stripped the white spaces to get the headline itself. 
